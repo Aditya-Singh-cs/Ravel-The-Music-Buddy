@@ -20,6 +20,20 @@
     justify-content: space-between;
     gap: 10px;
 }
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #8f5b5b;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063;
+}
 #header1 .logo a{
     text-decoration: none;
     color: black;
