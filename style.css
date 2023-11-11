@@ -4,6 +4,11 @@
     list-style: none;
     text-decoration: none;
 }
+/* @media only screen and (max-width: 50%) {
+ a{
+    
+    }
+  } */
 #header1{
     display: flex;
     align-items: center;
@@ -16,14 +21,14 @@
     left: 0;
     box-shadow: 10px 10px 150px;
     z-index: 4;
-    gap: 10px;
 }
 .sidebar{
     position: fixed;
     left: -250px;
-    width: 250px;
+    width: 240px;
     height: 100%;
-    background: #a0d1ef;
+    background: #04202d;
+    border-radius: 5px;
 }
 .sidebar header{
     font-size: 22px;
@@ -46,6 +51,7 @@
     border-top: 2px solid rgba(255,255,255,.1);
     border-bottom: 2px solid black;
     transition: .3s;
+    color: white;
 }
 .sidebar ul li:hover a{
     padding-left: 50px; 
@@ -98,7 +104,7 @@ label #cancel{
     gap: 10px;
     margin-left: 30px;
 }
-#header1 .logo a{
+.logo a{
     text-decoration: none;
     color: black;
 }
@@ -116,13 +122,13 @@ label #cancel{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px;
+    gap:5px;
 }
 .navbar1{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 18px;
 }
 .navbar1 a{
     text-decoration: none;
@@ -130,21 +136,26 @@ label #cancel{
     font-weight: 600;
     color: #1a1a1a;
     transition: 0.3s ease;
+    border:1px solid black;
+    padding: 5px;
+    border-radius: 5px;
 }
 .navbar1 a:hover,
 .navbar1 a.active{
-    color: #088178;
+    /* color: #088178; */
+    background-color: #031118;
+    color: whitesmoke;
 }
-.navbar1 a.active::after,
+/* .navbar1 a.active::after,
 .navbar1 a:hover::after{
     content: "";
-    width: 30%;
+    width: 3%;
     height: 2px;
-    background: #088178;
+    background: #e8eded;
     position: absolute;
     bottom: -4px;
-    left: 10px;
-}
+    right: 10px;
+} */
 /* styling search bar */
 .search input[type=text]{
     width:250px;
@@ -162,7 +173,7 @@ label #cancel{
     align-items: center;
     justify-content: space-evenly;
     padding: 15px 10px;
-    background: rgb(206, 208, 210);
+    background: rgb(19, 26, 62);
     position: sticky;
     height: 30px;
     top: 0;
@@ -173,20 +184,42 @@ label #cancel{
     list-style: none;
     display: flex;
     gap: 70px;
+    margin-right: 20px;
 }
 .navbar2 ul li{
     padding: 10px 7px;
     position: relative;
 }
 .navbar2 ul li a{
-    color: black;
+    color: rgb(243, 239, 239);
     text-decoration: none;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 15px;
+    font-size: 0.900rem;
     transition: all 0.1s;
+    /* text-size-adjust: auto; */
+    /* border: 1px solid black; */
+    /* background-color: #0a5275; */
+    /* padding: 5px; */
 }
-.navbar2 ul li a:hover{
-    color: blue;
+.navbar2 a::after{
+    /* border: 1px solid black;
+    background-color: #0a5275;
+    padding: 5px; */
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #e8eded;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+    top: 50px;
+}
+.navbar2 a:hover:after{
+    opacity: 1;
 }
 .dropdown_menu{
     display: none;
@@ -196,7 +229,7 @@ label #cancel{
     position: absolute;
     left: 0;
     top: 100%;
-    background: rgb(206, 208, 210);
+    background: rgb(19, 26, 62);
 }
 .dropdown_menu ul{
     display: block;
