@@ -288,7 +288,8 @@ label #cancel{
     /* flex-direction: row; */
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: space-between;
+    margin-right: 8px;
 }
 #feature .fe-box{
     /* display: flex; */
