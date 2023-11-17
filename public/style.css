@@ -213,7 +213,7 @@ label #cancel{
     height: 2px;
     background: #e8eded;
     position: absolute;
-    bottom: -1px;
+    bottom: -2px;
     left: 0px;
     opacity: 0;
     transition: all 0.2s;
