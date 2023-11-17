@@ -5,7 +5,9 @@
     text-decoration: none;
 }
 /* @media only screen and (max-width: 50%) {
-
+ a{
+    
+    }
   } */
 #header1{
     display: flex;
@@ -177,11 +179,13 @@ label #cancel{
     top: 0;
     left: 0;
     box-shadow: 10px 10px 150px;
+    font-size: 1rem;
 }
 .navbar2 ul{
     list-style: none;
     display: flex;
     gap: 70px;
+    /* justify-content: space-between; */
     margin-right: 20px;
 }
 .navbar2 ul li{
@@ -189,11 +193,11 @@ label #cancel{
     position: relative;
 }
 .navbar2 ul li a{
-    color: rgb(243, 239, 239);
+    color: white;
     text-decoration: none;
     /* font-weight: 500; */
-    font-size: 15px;
-    font-size: 0.900rem;
+    /* font-size: 15px; */
+    font-size: 0.9em;
     transition: all 0.1s;
     /* text-size-adjust: auto; */
     /* border: 1px solid black; */
@@ -209,13 +213,17 @@ label #cancel{
     height: 2px;
     background: #e8eded;
     position: absolute;
-    bottom: -4px;
+    bottom: -1px;
     left: 0px;
     opacity: 0;
     transition: all 0.2s;
     pointer-events: none;
-    top: 50px;
+    top: 44px;
 }
+/* .navbar2 a:hover{
+    font-size: 0.8rem;
+
+} */
 .navbar2 a:hover:after{
     opacity: 1;
 }
@@ -311,6 +319,7 @@ label #cancel{
 }
 #feature .fe-box:hover{
     box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+    /* transform: scale(0.98) translateY(5px); */
 }
 #feature .fe-box h4{
     float: left;
@@ -349,4 +358,5 @@ label #cancel{
     font-weight: 1000;
     font-size: 1.5rem;
 }
+
 
